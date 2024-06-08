@@ -1,0 +1,100 @@
+@font-face {
+  font-family: "DNFBitBitv2";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBitv2.otf")
+    format("opentype");
+}
+.center {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow-x: hidden;
+}
+body,
+html,
+.center {
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+.animation {
+  right: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+.dino {
+  position: relative;
+  margin-left: 30px;
+  width: 100px;
+  height: 60px;
+  margin-bottom: 50px;
+}
+.dinodown {
+  margin-left: 30px;
+  width: 100px;
+  height: 60px;
+  margin-bottom: 50px;
+}
+
+.dinoJump {
+  margin-left: 30px;
+  width: 100px;
+  height: 60px;
+  margin-bottom: 50px;
+  animation: Up 650ms forwards;
+}
+@keyframes Up {
+  0% {
+    margin-bottom: 50px;
+    animation-timing-function: cubic-bezier(0.33333, 0.66667, 0.66667, 1);
+  }
+  50% {
+    margin-bottom: 500px;
+    animation-timing-function: cubic-bezier(0.33333, 0, 0.66667, 0.33333);
+  }
+  100% {
+    margin-bottom: 50px;
+  }
+}
+.absolute {
+  position: absolute;
+}
+.cloud {
+  right: 0;
+  position: absolute;
+  display: flex;
+  width: 100%;
+}
+.bird {
+  position: absolute;
+  width: 60px;
+  transition: all 100ms;
+}
+.bdiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.Text {
+  font-family: "DNFBitBitv2";
+  color: black;
+  margin-right: 90px;
+}
+.imgsize {
+  width: 30px;
+  height: 30px;
+  margin-right: 90px;
+  margin-bottom: 127px;
+}
+.score {
+  font-family: "DNFBitBitv2";
+}
